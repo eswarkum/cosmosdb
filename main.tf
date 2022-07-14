@@ -9,7 +9,7 @@ resource "random_string" "random" {
 }
 
 resource "azurerm_cosmosdb_account" "db" {
-  name                      = replace("cosmos-${local.name}", "-", "")
+  name                      = "${var.cosmos_db_account_name}-${local.name}"
   resource_group_name       = var.resource_group_name
   location                  = var.location
   offer_type                = "Standard"
