@@ -11,7 +11,7 @@ variable "resource_group_name" {
 variable "location" {
   description = "Short COSMOSDB location name i.e West Europe."
   type        = string
-  default = "eastus"
+  default = "South India"
 }
 variable "tags" {
   description = "Tags to associate with your COSMOSDB"
@@ -25,7 +25,7 @@ variable "cosmos_db_account_name" {
   
 }
 variable "failover_location" {
-  default = "westus"
+  default = "West India"
 }
 variable "consistency_level" {
   default = "BoundedStaleness"
