@@ -12,9 +12,10 @@ output "cosmosdb_endpoint" {
 }
 output "cosmosdb_connectionstrings" {
   description = "Cosmos db name"
-  value       = azurerm_cosmosdb_account.db.cosmosdb_connectionstrings
+  value       = azurerm_cosmosdb_account.db.connectionstrings
 }
+
 output "cosmosdb_masterkey" {
   description = "Cosmos db name"
-  value       = azurerm_cosmosdb_account.db.primary_master_key
+  value       = azurerm_cosmosdb_account.db.primary_key
 }
