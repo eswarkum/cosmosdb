@@ -21,9 +21,9 @@ variable "tags" {
 variable "cosmosdb_subnet_id" {
   description = "Subnet ID pf the COSMOSDB private endpoint"
 }
-variable "cosmos_db_account_name" {
+#variable "cosmos_db_account_name" {
   
-}
+#}
 variable "failover_location" {
   default = "West India"
 }
